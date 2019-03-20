@@ -22,7 +22,7 @@ using namespace std;
 			{'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}
 			};
 			
-			for(int i=0;i<15;i++) {
+	                for(int i=0;i<15;i++) {
 			for(int j=0;j<15;j++) {
 			    cout<<kata2[i][j]<<" ";
 			} cout<<endl;
@@ -55,6 +55,35 @@ using namespace std;
 			// Diagonal kanan atas
                     for(int k=0;k<pjg_kata[m];k++){
                         if(kata1[m][k]==kata2[i-k][j+k]){
+                            flag=k;
+                        }else
+                            break;
+                    }
+                    if(flag == (pjg_kata[m]-1)) {
+                        flag2 +=1;
+                    } else {
+                        flag2 +=0;
+                    }
+		    } else {
+                        flag2 +=0;
+                    }
+                    flag=0;
+                    	// Diagonal kiri atas
+                    for(int k=0;k<pjg_kata[m];k++){
+                        if(kata1[m][k]==kata2[i-k][j-k]){
+                            flag=k;
+                        }else
+                            break;
+                    }
+                    if(flag == (pjg_kata[m]-1)) {
+                        flag2 +=1;
+                    } else {
+                        flag2 +=0;
+                    }
+                    flag=0;
+                    	// Diagonal kiri bawah
+                    for(int k=0;k<pjg_kata[m];k++){
+                        if(kata1[m][k]==kata2[i+k][j-k]){
                             flag=k;
                         }else
                             break;
