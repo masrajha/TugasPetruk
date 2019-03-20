@@ -38,7 +38,7 @@ using namespace std;
     				for(int m=0;m<jmlh;m++){
        					for(int i=0;i<15;i++){
             				for(int j=0;j<15;j++){
-                				if(kataa[m][0]==kata2[i][j]){
+                				if(kata1[m][0]==kata2[i][j]){
 			// Diagonal kanan bawah
                     for(int k=0;k<pjg_kata[m];k++){
                         if(kata1[m][k]==kata2[i+k][j+k]){
