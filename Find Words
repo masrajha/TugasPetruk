@@ -1,3 +1,8 @@
+//lita amelia 1817051001
+//rahmayanti kurniasih 1817051061
+//atika indah nuraini 1857051009
+//sasya salsabila janerdi 1867051001
+
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -31,17 +36,7 @@ using namespace std;
 	cout<<"Jumlah kata yang di cari : "; cin>>jmlh;
 	for(int i=0;i<jmlh;i++) {
 		cout<<"Masukkan kata : "; cin>>kata2;
-		pjgkata = strlen(kata2); // Menghitung jumlah huruf yg terdapat pada kata
-		
-		// ToUpper (untuk penggunaan huruf kapital/tidak)
-    for(int i=0;i<jmlh;i++){
-        for(int j=0;j<pjgkata;j++){
-            if((int)kata[i][j] < 97 || (int)kata[i][j] > 122)
-                continue;
-            else
-                kata[i][j] = (char)((int)kata[i][j] - 32);
-        }
-    }
+		pjgkata = strlen(kata2);
 		for(int i=0;i<15;i++){
 			for(int j=0;j<15;j++){
 				if (kata2[0] == kata[i][j]){
