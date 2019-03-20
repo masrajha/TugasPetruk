@@ -1,9 +1,0 @@
-//jumlah kata yang dicari
-cout<<"\n\njumlah kata yang ingin dicari : ";cin>>jmlh
-for(int i=0;ijmlh;i++){
-//input kata
-cout<<i+1<<".";
-cin.getline9kata[i],15;
-pjg_kata[i]=strlen(kata1[i]);  
-//menghitung jumlah huruf pada kata
-}
