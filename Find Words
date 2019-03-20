@@ -130,4 +130,29 @@ using namespace std;
                     } else {
                         flag2 +=0;
                     }
-		    flag=0;
+		    flag=0;// Kanan
+                    for(int k=0;k<pjg_kata[m];k++){
+                        if(kataa[m][k]==kata2[i][j+k]){
+                            flag=k;
+                        }else
+                            break;
+                    }
+                    if(flag == (pjg_kata[m]-1)) {
+                        flag2 +=1;
+                    } else {
+                        flag2 +=0;
+                    }
+                    flag=0;
+				}
+			}
+		}
+			// output
+		if(flag2>0) {
+			cout<<"ADA\n\n";
+			flag2=0;
+		}else {
+			cout<<"TIDAK ADA\n\n";
+		}
+	}
+	
+}
